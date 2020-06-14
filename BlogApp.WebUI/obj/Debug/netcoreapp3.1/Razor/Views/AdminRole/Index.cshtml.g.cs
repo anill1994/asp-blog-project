@@ -29,7 +29,7 @@ using Microsoft.AspNetCore.Identity;
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e2e0a290d8e71b2c62917b4f86491ee9d7abf5ff", @"/Views/AdminRole/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"cde1a6e346d300d03327b0a5ab65382bbac7d21d", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c98950e33689daa646b3ea3ebd7204accb37215b", @"/Views/_ViewImports.cshtml")]
     public class Views_AdminRole_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<IdentityRole>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("text-danger"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -57,6 +57,7 @@ using Microsoft.AspNetCore.Identity;
             }
         }
         private global::Microsoft.AspNetCore.Mvc.TagHelpers.ValidationSummaryTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationSummaryTagHelper;
+        private global::BlogApp.WebUI.Infrastructure.RoleUsersTagHelper __BlogApp_WebUI_Infrastructure_RoleUsersTagHelper;
         private global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
         private global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
         private global::Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper;
@@ -73,7 +74,7 @@ using Microsoft.AspNetCore.Identity;
             WriteLiteral("\r\n<div class=\"bg-primary text-white p-1 m-1\">\r\n    <h2>Role List</h2>\r\n</div>\r\n");
             EndContext();
             BeginContext(154, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("div", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e2e0a290d8e71b2c62917b4f86491ee9d7abf5ff5984", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("div", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e2e0a290d8e71b2c62917b4f86491ee9d7abf5ff6108", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationSummaryTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.ValidationSummaryTagHelper>();
@@ -161,26 +162,42 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationSummaryTagHelper.ValidationSumma
 #line default
 #line hidden
             EndContext();
-            BeginContext(823, 26, true);
-            WriteLiteral("</td>\r\n                <td");
+            BeginContext(823, 23, true);
+            WriteLiteral("</td>\r\n                ");
             EndContext();
-            BeginWriteAttribute("identity-role", " identity-role=\"", 849, "\"", 873, 1);
+            BeginContext(846, 34, false);
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("td", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e2e0a290d8e71b2c62917b4f86491ee9d7abf5ff10373", async() => {
+            }
+            );
+            __BlogApp_WebUI_Infrastructure_RoleUsersTagHelper = CreateTagHelper<global::BlogApp.WebUI.Infrastructure.RoleUsersTagHelper>();
+            __tagHelperExecutionContext.Add(__BlogApp_WebUI_Infrastructure_RoleUsersTagHelper);
+            BeginWriteTagHelperAttribute();
 #line 36 "C:\Users\anil_\OneDrive\Masaüstü\filmolok\BlogApp.WebUI\Views\AdminRole\Index.cshtml"
-WriteAttributeValue("", 865, role.Id, 865, 8, false);
+                       WriteLiteral(role.Id);
 
 #line default
 #line hidden
-            EndWriteAttribute();
-            BeginContext(874, 50, true);
-            WriteLiteral("></td>\r\n                <td>\r\n                    ");
+            __tagHelperStringValueBuffer = EndWriteTagHelperAttribute();
+            __BlogApp_WebUI_Infrastructure_RoleUsersTagHelper.Role = __tagHelperStringValueBuffer;
+            __tagHelperExecutionContext.AddTagHelperAttribute("identity-role", __BlogApp_WebUI_Infrastructure_RoleUsersTagHelper.Role, global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            EndContext();
+            BeginContext(880, 44, true);
+            WriteLiteral("\r\n                <td>\r\n                    ");
             EndContext();
             BeginContext(924, 298, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e2e0a290d8e71b2c62917b4f86491ee9d7abf5ff10715", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e2e0a290d8e71b2c62917b4f86491ee9d7abf5ff12074", async() => {
                 BeginContext(988, 128, true);
                 WriteLiteral("\r\n                        <button type=\"submit\" value=\"Delete\" class=\"btn btn-danger\">Delete </button>\r\n                        ");
                 EndContext();
                 BeginContext(1116, 77, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e2e0a290d8e71b2c62917b4f86491ee9d7abf5ff11234", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e2e0a290d8e71b2c62917b4f86491ee9d7abf5ff12593", async() => {
                     BeginContext(1185, 4, true);
                     WriteLiteral("Edit");
                     EndContext();
@@ -259,7 +276,7 @@ WriteAttributeValue("", 865, role.Id, 865, 8, false);
             WriteLiteral("</table>\r\n");
             EndContext();
             BeginContext(1294, 70, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e2e0a290d8e71b2c62917b4f86491ee9d7abf5ff16515", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e2e0a290d8e71b2c62917b4f86491ee9d7abf5ff17874", async() => {
                 BeginContext(1341, 19, true);
                 WriteLiteral("\r\n    Create User\r\n");
                 EndContext();
